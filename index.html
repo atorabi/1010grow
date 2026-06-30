@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1010Grow — Invest Instead of Spend</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 16px; line-height: 1.7; color: #1a1a1a; background: #f7faf8; }
+  header { background: #0f3d2e; padding: 56px 24px; text-align: center; }
+  header h1 { font-size: 34px; font-weight: 700; color: #fff; }
+  header .tagline { font-size: 17px; color: #7fcaa5; margin-top: 10px; }
+  .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 40px; }
+  h2 { font-size: 22px; font-weight: 600; color: #0f3d2e; margin: 40px 0 14px; }
+  h2:first-of-type { margin-top: 0; }
+  p { margin: 0 0 16px; }
+  .features { display: grid; gap: 14px; margin: 8px 0; }
+  .feature { background: #fff; border: 1px solid #e0ebe5; border-radius: 12px; padding: 18px 20px; }
+  .feature h3 { font-size: 17px; color: #0f3d2e; margin-bottom: 4px; }
+  .feature p { font-size: 15px; color: #44524b; margin: 0; }
+  .steps { counter-reset: step; margin: 8px 0; padding: 0; list-style: none; }
+  .steps li { position: relative; padding: 10px 0 10px 44px; border-bottom: 1px solid #e8efeb; }
+  .steps li:last-child { border-bottom: none; }
+  .steps li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 10px; width: 28px; height: 28px; background: #0f3d2e; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; }
+  .tiers { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; margin: 8px 0; }
+  @media (max-width: 560px) { .tiers { grid-template-columns: 1fr; } }
+  .tier { border-radius: 12px; padding: 18px 20px; }
+  .tier.free { background: #fff; border: 1px solid #e0ebe5; }
+  .tier.premium { background: #eef6f1; border: 1px solid #cfe6da; }
+  .tier h3 { font-size: 16px; color: #0f3d2e; margin-bottom: 8px; }
+  .tier ul { margin: 0 0 0 18px; font-size: 14px; color: #44524b; }
+  .tier li { margin-bottom: 5px; }
+  .support { background: #eef6f1; border: 1px solid #cfe6da; border-radius: 12px; padding: 20px 22px; margin-top: 8px; }
+  .confirm { background: #fff8e1; border-left: 3px solid #f0b400; padding: 1px 6px; font-size: 14px; color: #6a5400; }
+  .note { font-size: 13px; color: #6b7d74; font-style: italic; }
+  a { color: #2e7d5b; }
+  hr { border: none; border-top: 1px solid #dde6e1; margin: 40px 0 24px; }
+  footer { text-align: center; font-size: 13px; color: #6b7d74; padding: 8px 24px 40px; }
+  footer a { margin: 0 8px; white-space: nowrap; }
+</style>
+</head>
+<body>
+<header>
+  <h1>1010Grow</h1>
+  <p class="tagline">Invest instead of spend.</p>
+</header>
+<div class="container">
+  <h2>About</h2>
+  <p>1010Grow helps you pause before a purchase and put that money toward investing instead. Before you spend $20 on an impulse buy, the app shows you what that amount could be worth invested over time &mdash; then helps you act on it, with a simulated portfolio to practice or your own connected brokerage when you're ready.</p>
+
+  <h2>How the InvestWise flow works</h2>
+  <ol class="steps">
+    <li>Enter what you were about to spend money on.</li>
+    <li>See the opportunity cost &mdash; what that amount could grow to if invested instead.</li>
+    <li>Note your mood and tie the choice to your goals.</li>
+    <li>Choose a stock or ETF yourself, optionally referencing the monthly Buffett screen.</li>
+    <li>Place a paper trade to practice, or a live trade through your own connected brokerage.</li>
+  </ol>
+  <p class="note">You choose every stock and confirm every trade. 1010Grow does not recommend securities or trade on your behalf.</p>
+
+  <h2>Features</h2>
+  <div class="features">
+    <div class="feature"><h3>Spend-to-invest nudge</h3><p>Turn a would-be purchase into an investing decision and see its long-term opportunity cost.</p></div>
+    <div class="feature"><h3>Paper trading</h3><p>Practice investing with a virtual portfolio &mdash; free, with no real money at risk.</p></div>
+    <div class="feature"><h3>Buffett screen</h3><p>A monthly, rules-based screen that surfaces stocks meeting value-investing criteria &mdash; high return on equity, low P/E, low debt. Informational only; you decide what to do with it.</p></div>
+    <div class="feature"><h3>Portfolio tracking</h3><p>Follow your paper and live portfolios in one place.</p></div>
+    <div class="feature"><h3>Connect your brokerage (Premium)</h3><p>Premium subscribers can link their own Alpaca or Charles Schwab account to place self-directed trades.</p></div>
+  </div>
+
+  <h2>Free &amp; Premium</h2>
+  <div class="tiers">
+    <div class="tier free">
+      <h3>Free</h3>
+      <ul>
+        <li>Paper trading</li>
+        <li>Monthly Buffett screen (picks visible)</li>
+        <li>Spend-to-invest flow</li>
+      </ul>
+    </div>
+    <div class="tier premium">
+      <h3>Premium &mdash; $4.99/month</h3>
+      <ul>
+        <li>Everything in Free</li>
+        <li>Live trading via your own Alpaca or Schwab account</li>
+        <li>Broker integrations</li>
+        <li>Buffett performance charts vs. the S&amp;P 500 and detailed trend analysis</li>
+        <li>Cancel anytime</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Subscriptions are billed through Apple In-App Purchase on iOS and Stripe on the web.</p>
+
+  <h2>Support</h2>
+  <div class="support">
+    <p style="margin:0">Need help? Contact us at <span class="confirm">[SUPPORT EMAIL]</span>.</p>
+  </div>
+
+  <hr>
+  <footer>
+    <a href="/privacy">Privacy Policy</a> &middot;
+    <a href="/terms">Terms of Service</a> &middot;
+    <a href="/risk-disclosure">Risk Disclosure</a> &middot;
+    <a href="/buffett-disclaimer">Buffett Disclaimer</a> &middot;
+    <a href="/automated-content">Automated Content</a>
+  </footer>
+</div>
+</body>
+</html>
